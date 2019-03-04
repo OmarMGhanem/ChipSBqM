@@ -12,6 +12,20 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	counter
 
+} {} {}} C:/git/ChipSBqM/SENSORTEST.v {1 {vlog -work work -stats=none C:/git/ChipSBqM/SENSORTEST.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SENSORTESTBENCH
+
+Top level modules:
+	SENSORTESTBENCH
+
+} {} {}} C:/git/ChipSBqM/ROM.v {1 {vlog -work work -stats=none C:/git/ChipSBqM/ROM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
 } {} {}} C:/git/ChipSBqM/CLK.v {1 {vlog -work work -stats=none C:/git/ChipSBqM/CLK.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module CLOCK
