@@ -1,3 +1,19 @@
+/**
+CO = Counter Output
+EF <= empty flag 
+FF <= Full flag 
+UP signal 
+Down signal
+CLK system Clock 
+MR master rest 
+
+initial value for the counter is 0 :"D
+
+
+EF and FF is ative High 
+Ative High Master rest 
+
+**/
 module counter(CO,EF,FF,UP,DOWN,CLK,MR);
 input UP,DOWN,CLK,MR ;
 

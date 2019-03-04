@@ -97,12 +97,6 @@ if(CO == 0)begin EF = 1 ; end
 	else begin FF = 0 ; end
 end
 
-/**always@(posedge CLK)begin
-	if(CO == 0)begin EF = 1 ; end
-	else begin EF = 0 ; end
-	if(CO == 7)begin FF = 1 ; end
-	else begin FF = 0 ; end
-end **/
 
 
 
