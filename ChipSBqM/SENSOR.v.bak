@@ -10,7 +10,7 @@ CS = A ;
 Z = 0 ;
 end 
 
-always@(X)begin
+always@(X,CS)begin
 case(CS)
 A:if(X==0)begin NS=B ;end
 else begin NS=A ;end
@@ -22,14 +22,14 @@ end
 always@(posedge CLK)begin
 if(MR)begin
 CS=A; Z=1 ;end
-else begin CS =NS ; end 
-
-case(CS)
-A: Z =0 ;
-B: Z=1 ;
+else begin CS<=NS ; end 
 
 
+end
 
-endcase
+always@(CS)begin
+if(CS=A)begin Z =0; end
+else if begin (CS=B) Z=1 ;end
+
 end
 endmodule 

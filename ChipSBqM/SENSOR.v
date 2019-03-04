@@ -22,14 +22,14 @@ end
 always@(posedge CLK)begin
 if(MR)begin
 CS=A; Z=1 ;end
-else begin CS =NS ; end 
-
-case(CS)
-A: Z =0 ;
-B: Z=1 ;
+else begin CS<=NS ; end 
 
 
+end
 
-endcase
+always@(CS)begin
+if(CS==A)Z =0; 
+else if  (CS==B) Z=1 ;
+
 end
 endmodule 

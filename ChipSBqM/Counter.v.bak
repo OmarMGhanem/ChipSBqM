@@ -24,7 +24,7 @@ output reg EF,FF ;
 
 initial
 begin 
-CS <= H ;
+CS = H ;
 CO = 0;
 EF = 1 ;
 FF = 0 ;
@@ -39,29 +39,29 @@ begin
 
 
 case(CS)
-A:if(UP)begin NS <= A ;end
-else if(DOWN)begin NS <= B ; end
+A:if(UP)begin NS = A ;end
+else if(DOWN)begin NS = B ; end
 
-B: if(UP)begin NS <= A ;end
-else if(DOWN)begin NS <= C ; end
+B: if(UP)begin NS = A ;end
+else if(DOWN)begin NS = C ; end
 
-C: if(UP)begin NS <= B ;end
+C: if(UP)begin NS = B ;end
 else if(DOWN)begin NS <= D ; end
 
-D: if(UP)begin NS <= C ;end
-else if(DOWN)begin NS <= E ; end
+D: if(UP)begin NS = C ;end
+else if(DOWN)begin NS = E ; end
 
-E: if(UP)begin NS <= D ;end
+E: if(UP)begin NS = D ;end
 else if(DOWN)begin NS <= F ; end
 
-F: if(UP)begin NS <= E ;end
-else if(DOWN)begin NS <= G ; end
+F: if(UP)begin NS = E ;end
+else if(DOWN)begin NS = G ; end
 
-G: if(UP)begin NS <= F ;end
-else if(DOWN)begin NS <= H ; end
+G: if(UP)begin NS = F ;end
+else if(DOWN)begin NS = H ; end
 
-H: if(UP)begin NS <= G ;end
-else if(DOWN)begin NS <= H ; end
+H: if(UP)begin NS = G ;end
+else if(DOWN)begin NS = H ; end
 
 
  
@@ -76,7 +76,7 @@ begin
 if (MR==0)begin CS <= NS ; 
 
  end
-else begin  CS <=H ;
+else begin  CS =H ;
 EF = 1 ; FF = 0 ;
 
  end
@@ -84,25 +84,25 @@ EF = 1 ; FF = 0 ;
 
 case(CS)
 A:begin
- CO <= 7 ;
+ CO = 7 ;
   end// 7 
 
-B:begin  CO <= 6 ;
+B:begin  CO = 6 ;
  end//6
 
-C: begin  CO <= 5 ;
+C: begin  CO = 5 ;
  end //5
 
-D: begin  CO <= 4 ;
+D: begin  CO = 4 ;
 end //4
 
-E:begin  CO <= 3 ;
+E:begin  CO = 3 ;
 end//3
 
-F:begin  CO <= 2 ;
+F:begin  CO = 2 ;
   end//2
-G:begin CO <= 1 ; end //1
-H: begin  CO <= 0 ;
+G:begin CO = 1 ; end //1
+H: begin  CO = 0 ;
  end
  
 endcase 
