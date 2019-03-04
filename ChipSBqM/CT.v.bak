@@ -1,0 +1,15 @@
+module omarg;
+reg[2:0] x ;
+reg[2:0] y ;
+reg[5:0] z[5] ;
+
+
+initial begin
+x = 011 ;
+y = 110 ;
+z = x.y ;
+end
+
+
+
+endmodule

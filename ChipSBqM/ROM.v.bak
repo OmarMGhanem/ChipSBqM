@@ -1,0 +1,59 @@
+module ROM(TIME,TCOUNT,PCOUNT);
+input[1:0] TCOUNT ;input[2:0] PCOUNT ; 
+output reg[4:0] TIME ;
+
+reg[4:0] INDEX ;
+reg[4:0] TABLE[0:32];
+initial begin 
+INDEX[4:3]=TCOUNT;
+INDEX[2:0] =PCOUNT;
+TIME <= TABLE[INDEX];
+ end
+initial begin
+TABLE[0]<=0;
+TABLE[1]<=0;
+TABLE[2]<=0;
+TABLE[3]<=0;
+TABLE[4]<=0;
+TABLE[5]<=0;
+TABLE[6]<=0;
+TABLE[7]<=0;
+TABLE[8]<=0;
+TABLE[9]<=3;
+TABLE[10]<=6;
+TABLE[11]<=9;
+TABLE[12]<=12;
+TABLE[13]<=15;
+TABLE[14]<=18;
+TABLE[15]<=21;
+TABLE[16]<=0;
+TABLE[17]<=3;
+TABLE[18]<=4;
+TABLE[19]<=6;
+TABLE[20]<=7;
+TABLE[21]<=9;
+TABLE[22]<=10;
+TABLE[23]<=12;
+TABLE[24]<=0;
+TABLE[25]<=3;
+TABLE[26]<=4;
+TABLE[27]<=5;
+TABLE[28]<=6;
+TABLE[29]<=7;
+TABLE[30]<=8;
+TABLE[31]<=9;
+
+end
+
+always@(PCOUNT,TCOUNT)begin
+
+{INDEX[4],INDEX[3]} =TCOUNT;
+{INDEX[2],INDEX[1],INDEX[0]} =PCOUNT;
+TIME <= TABLE[INDEX];
+end
+
+
+
+
+
+endmodule

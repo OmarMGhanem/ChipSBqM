@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/Omar Ghanem/Desktop/Vlog learning
 vCLOCK
-!s110 1551715464
+!s110 1551722083
 !i10b 1
-!s100 Y]9EK96;I@;HcAAJ7mi2_1
-I2cco]NVC1P?Ihi_]`bSR>3
+!s100 `5H=7E@J`f0d;D_E2j`ZR2
+I>6CFH^Hc6m2Z<o0a?6EFI0
 Z0 VDg1SIo80bB@j0V0VzS_@n1
 Z1 dC:/git/ChipSBqM
-w1551715462
+w1551722080
 8C:/git/ChipSBqM/CLK.v
 FC:/git/ChipSBqM/CLK.v
 L0 2
@@ -23,7 +23,7 @@ Z2 OP;L;10.4a;61
 r1
 !s85 0
 31
-!s108 1551715464.000000
+!s108 1551722083.000000
 !s107 C:/git/ChipSBqM/CLK.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/git/ChipSBqM/CLK.v|
 !s101 -O0
@@ -51,3 +51,68 @@ r1
 !s101 -O0
 !i113 1
 R3
+vomarg
+!s110 1551723286
+!i10b 1
+!s100 H?SZUK8:DBWST_iajU2Cc1
+I8UnJcEBL?J_9MB302@99Q2
+R0
+R1
+w1551723282
+8C:/git/ChipSBqM/CT.v
+FC:/git/ChipSBqM/CT.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1551723286.000000
+!s107 C:/git/ChipSBqM/CT.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/git/ChipSBqM/CT.v|
+!s101 -O0
+!i113 1
+R3
+vROM
+!s110 1551723420
+!i10b 1
+!s100 H@KzS7I3gObYWN<>MKmP@0
+IAI]JS4WYfW_k^AHOLlJV83
+R0
+R1
+w1551723417
+8C:/git/ChipSBqM/ROM.v
+FC:/git/ChipSBqM/ROM.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1551723420.000000
+!s107 C:/git/ChipSBqM/ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/git/ChipSBqM/ROM.v|
+!s101 -O0
+!i113 1
+R3
+n@r@o@m
+vSENSOR
+!s110 1551724388
+!i10b 1
+!s100 27N=BK7[^JWUFI]843Z>Z1
+I[b]89@;IA8mWGAmKPO99]3
+R0
+R1
+w1551724386
+8C:/git/ChipSBqM/SENSOR.v
+FC:/git/ChipSBqM/SENSOR.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1551724388.000000
+!s107 C:/git/ChipSBqM/SENSOR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/git/ChipSBqM/SENSOR.v|
+!s101 -O0
+!i113 1
+R3
+n@s@e@n@s@o@r

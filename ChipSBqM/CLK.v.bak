@@ -1,13 +1,26 @@
 
 module CLOCK(CLK);
 output reg CLK ;
+reg[2:0] x ;
+reg[2:0] y ;
+reg[5:0] z ;
+
+
+
 
 initial begin  
 CLK = 0 ;
+
+
+x = 011 ;
+y = 010 ;
+{z[2],z[1],z[0]}= x;
+{z[5],z[4],z[3]}= y;
+
 end
 always begin 
 #1
-CLK = ~CLK?
+CLK = ~CLK ;
 end
 
 
